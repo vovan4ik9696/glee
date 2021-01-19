@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -19,20 +20,32 @@
   &__list {
     display: flex;
   }
-  &__list-item + &__list-item {
-    margin-left: 37px;
+
+  &__list-item+&__list-item {
+    margin-left: 33px;
   }
+
   &__list-link {
+    padding: 0 2px 2px;
+
     @extend %rubik-500;
     font-size: 15px;
     color: $header-color;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color .3s;
+  }
+
+  &__list-link:hover {
+    border-bottom: 1px solid $header-color;
   }
 }
 
 .user-nav {
   display: flex;
   align-items: center;
-  &__oreders {
+
+  &__orders {
     display: flex;
     padding: 9px 41px 9px;
     margin-right: 18px;
@@ -40,17 +53,23 @@
     background-color: #fcd7b6;
     border-radius: 25px;
   }
+
   &__link {
     position: relative;
   }
+
+  &__img {
+    display: block;
+  }
+
   &__number {
     position: absolute;
     top: 2px;
-    right: -9px;
+    left: 11px;
 
     width: 16px;
     height: 16px;
-    
+
     text-align: center;
     line-height: 16px;
     font-size: 10px;
@@ -58,6 +77,14 @@
 
     border-radius: 50%;
     background-color: #fff;
+
+    z-index: 2;
+
+    transition: transform .3s;
+  }
+
+  & svg {
+    transition: transform .3s;
   }
 }
 
@@ -67,17 +94,43 @@
 
   background-color: #edf1f4;
   border-radius: 50%;
+  transition: transform .3s;
+
+  &:hover svg {
+    transform: scale(2, 2);
+  }
 }
 
 .heart {
-  padding: 9px 0;
+
+  padding: 9px 29px 9px 0;
   margin-right: 29px;
+  border-right: 1px solid #fde7d3;
+
+  transition: transform .3s;
+
+  &:hover svg {
+    transform: scale(2, 2);
+  }
+
+  &:hover .user-nav__number {
+    transform: scale(1.4, 1.4) translate(5px, -5px);
+
+  }
 }
 
 .cart {
-  padding: 9px 0 9px 29px;
+  padding: 9px 0;
 
-  border-left: 1px solid #fde7d3;
+  transition: all .3s;
+
+  &:hover svg {
+    transform: scale(2, 2);
+  }
+
+  &:hover .user-nav__number {
+    transform: scale(1.4, 1.4) translate(5px, -5px);
+  }
 }
 
 .menu-btn {
@@ -85,13 +138,136 @@
 
   border-radius: 50%;
   background-color: #a3bbc8;
+
+  &:hover svg {
+    transform: scale(1.7, 1.7);
+  }
 }
 
 
+.footer-top {
+    display: flex;
+    padding: 70px 0;
+
+    line-height: 1.71;
+    border-bottom: 1px solid #dae4e9;
+
+  &__title {
+    margin-bottom: 24px;
+
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+
+  &__services {
+    width: 130px;
+    margin: 0 180px 0 100px;
+  }
+
+  &__item {
+    max-width: 220px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+  }
+
+  &__list-link {
+    @extend %footer-text;
+    border-bottom: 1px solid transparent;
+
+    transition: all .3s;
+  }
+
+  &__list-link:hover {
+    @extend %rubik-500;
+    border-bottom: 1px solid #7b7b7b;
+  }
+
+  &__address-name {
+    @extend %footer-text;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    max-width: 275px;
+    margin-left: auto;
+  }
+
+  &__form-text {
+    margin-bottom: 35px;
+
+    @extend %footer-text;
+  }
+
+  &__form-container {
+    display: flex;
+  }
+
+  &__form-input {
+    width: 170px;
+    padding: 12px;
+
+    background-color: #fef7f0;
+    border: none;
+  }
+
+  &__form-input::placeholder {
+    @extend %sans-400;
+    font-size: 12px;
+    color: #234969;
+  }
+
+  &__form-btn {
+    padding: 15px;
+
+    @extend %sans-400;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
+
+    transition: all .3s;
+  }
+
+  &__form-btn:hover {
+    background-color: rgb(178, 197, 207);
+    box-shadow: 0px 0px 17px 0px rgba(178, 197, 207, .8);
+  }
 
 
+}
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
 
+  @extend %footer-text;
+
+  &__list {
+    display: flex;
+
+    line-height: 1.2;
+  }
+
+  &__list-item+&__list-item {
+    margin-left: 13px;
+    padding-left: 13px;
+    border-left: 1px solid #7b7b7b;
+  }
+
+  &__link {
+    @extend %footer-text;
+  }
+}
 
 
 
