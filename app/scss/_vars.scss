@@ -31,3 +31,25 @@ $header-color: #436372;
   color: #7b7b7b;
   font-style: normal;
 }
+
+%title {
+  margin-bottom: 30px;
+
+  @extend %sans-700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.23;
+  color: #243f4d;
+}
+
+%filter-btn {
+  margin-bottom: 78px;
+
+  color: #8b8b8b;
+
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+
+  cursor: pointer;
+}
