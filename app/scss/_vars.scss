@@ -1,27 +1,29 @@
-$header-color: #436372;
+$accent-color: #436372;
+$title-color: #243f4d;
+$link-color: #7b7b7b;
 
 %sans-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 400;
 }
 
 %sans-500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 500;
 }
 
 %sans-700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans', sans-serif;
   font-weight: 700;
 }
 
 %rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
 }
 
 %rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
 
@@ -33,23 +35,11 @@ $header-color: #436372;
 }
 
 %title {
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 
   @extend %sans-700;
   text-align: center;
   font-size: 36px;
   line-height: 1.23;
-  color: #243f4d;
-}
-
-%filter-btn {
-  margin-bottom: 78px;
-
-  color: #8b8b8b;
-
-  background-color: transparent;
-  border: none;
-  outline: transparent;
-
-  cursor: pointer;
+  color: $title-color;
 }

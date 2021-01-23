@@ -5,18 +5,19 @@ body {
 
 body {
   display: flex;
-  
+
   @extend %sans-700;
   font-size: 16px;
   flex-direction: column;
   line-height: 2.5;
+
+  background-color: #fff;
 }
 
-.wrapper {
-  max-width: 1920px;
-  width: 100%;
-  padding: 0 76px;
-  margin: 0 auto;
+.header__title {
+  position: absolute;
+
+  visibility: hidden;
 }
 
 .main {
@@ -27,8 +28,36 @@ body {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
+
+  &--large {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 76px;
+    margin: 0 auto;
+  }
 }
 
 .title {
   @extend %title;
+}
+
+.filter-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-nav__btn {
+  margin-bottom: 78px;
+
+  color: #8b8b8b;
+
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+
+  cursor: pointer;
+
+  &+& {
+    margin-left: 22px;
+  }
 }
