@@ -1,0 +1,14 @@
+.products-week {
+  padding-top: 65px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+  }
+
+  .mixitup-control-active {
+    color: #191919;
+  }
+}

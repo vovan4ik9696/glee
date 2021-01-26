@@ -1,0 +1,140 @@
+.footer {
+  @extend %footer-text;
+
+  &__top {
+    display: flex;
+    padding: 70px 0;
+
+    line-height: 1.71;
+    border-bottom: 1px solid #dae4e9;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @extend %sans-700;
+    font-size: 16px;
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+
+  &__top-item {
+    &--services {
+      margin: 0 180px 0 100px;
+    }
+  }
+
+  &__top-address {
+    margin-top: 30px;
+  }
+
+  &__top-item {
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
+
+  &__top-link {
+    @extend %footer-text;
+    border-bottom: 1px solid transparent;
+
+    transition: all .3s;
+
+    &:hover {
+      text-shadow: 0 0 .45px $link-color, 0 0 .45px $link-color;
+      border-bottom: 1px solid $link-color;
+    }
+  }
+
+  &__top-name {
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  &__top-form {
+    max-width: 275px;
+    margin-left: auto;
+  }
+
+  &__form-text {
+    margin-bottom: 35px;
+  }
+
+  &__form-container {
+    display: flex;
+  }
+
+  &__form-input {
+    width: 170px;
+    height: 38px;
+    padding: 14px 15px 16px;
+
+    background-color: #fef7f0;
+    border: none;
+
+    &::placeholder {
+      @extend %sans-400;
+      font-size: 12px;
+      color: #234969;
+    }
+  }
+
+  &__form-btn {
+    padding: 8px 16px;
+    height: 38px;
+    width: 100px;
+
+    @extend %sans-400;
+    font-size: 14px;
+    color: #ffffff;
+
+    border: none;
+    background-color: #a3bbc8;
+    cursor: pointer;
+    outline-color: transparent;
+
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+      background-color: rgb(178, 197, 207);
+      box-shadow: 0px 0px 17px 0px rgba(178, 197, 207, .8);
+    }
+
+    &:active {
+      background-color: #8d9ca3;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+  }
+
+  &__bottom-list {
+    display: flex;
+
+    line-height: 1.2;
+  }
+
+  &__bottom-item {
+    &+& {
+      margin-left: 13px;
+      padding-left: 13px;
+      border-left: 1px solid $link-color;
+    }
+  }
+
+  &__bottom-link {
+    color: $link-color;
+    border-bottom: 1px solid transparent;
+
+    transition: all .3s;
+
+    &:hover {
+      text-shadow: 0 0 .45px $link-color, 0 0 .45px $link-color;
+      border-bottom: 1px solid $link-color;
+    }
+  }
+}

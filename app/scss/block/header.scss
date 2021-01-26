@@ -1,0 +1,134 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+
+  &__list {
+    display: flex;
+    margin-left: 147px;
+  }
+
+  &__item {
+    &+& {
+      margin-left: 33px;
+    }
+  }
+
+  &__link {
+    padding: 0 2px 2px;
+
+    @extend %rubik-500;
+    font-size: 15px;
+    color: $accent-color;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color .3s;
+
+    &:hover {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+
+  &__orders {
+    display: flex;
+    padding: 9px 41px 9px;
+    margin-right: 18px;
+
+    background-color: #fcd7b6;
+    border-radius: 25px;
+  }
+
+  &__link {
+    position: relative;
+
+    &--search {
+      padding: 17px;
+      margin-right: 21px;
+
+      background-color: #edf1f4;
+      border-radius: 50%;
+      transition: transform .3s;
+
+      &:hover svg {
+        transform: scale(2, 2);
+      }
+    }
+
+    &--heart {
+
+      padding: 9px 29px 9px 0;
+      margin-right: 29px;
+      border-right: 1px solid #fde7d3;
+
+      transition: transform .3s;
+
+      &:hover svg {
+        transform: scale(2, 2);
+      }
+
+      &:hover .user-nav__number {
+        transform: scale(1.4, 1.4) translate(5px, -5px);
+      }
+    }
+
+    &--cart {
+      padding: 9px 0;
+
+      transition: all .3s;
+
+      &:hover svg {
+        transform: scale(2, 2);
+      }
+
+      &:hover .user-nav__number {
+        transform: scale(1.4, 1.4) translate(5px, -5px);
+      }
+    }
+
+    &--menu-btn {
+      padding: 15px;
+
+      border-radius: 50%;
+      background-color: #a3bbc8;
+
+      &:hover svg {
+        transform: scale(1.7, 1.7);
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__number {
+    position: absolute;
+    top: 2px;
+    left: 11px;
+
+    width: 16px;
+    height: 16px;
+
+    text-align: center;
+    line-height: 16px;
+    font-size: 10px;
+    color: $title-color;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+    z-index: 2;
+
+    transition: transform .3s;
+  }
+
+  &__img {
+    transition: transform .3s;
+  }
+}
