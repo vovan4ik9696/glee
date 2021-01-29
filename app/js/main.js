@@ -8,8 +8,27 @@ $(function () {
     fade: true
   });
 
-  var mixer = mixitup('.products-week__content');
+  $('.insights__partners-slider').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1
+  });
 
-  
+
+
+  var containerEl1 = document.querySelector('[data-ref="products-week"]');
+  var containerEl2 = document.querySelector('[data-ref="new-design"]');
+
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer2 = mixitup(containerEl2, config);
 
 });

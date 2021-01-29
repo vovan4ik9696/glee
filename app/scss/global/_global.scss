@@ -9,7 +9,7 @@ body {
   @extend %sans-700;
   font-size: 16px;
   flex-direction: column;
-  line-height: 2.5;
+  line-height: 1.4;
 
   background-color: #fff;
 }
@@ -17,7 +17,17 @@ body {
 .visibility-hidden {
   position: absolute;
 
-  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main {
@@ -41,5 +51,6 @@ body {
   text-align: center;
   font-size: 36px;
   line-height: 1.23;
-  color: $title-color;
+  color: $title;
 }
+

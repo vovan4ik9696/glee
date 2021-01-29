@@ -40,8 +40,8 @@
     transition: all .3s;
 
     &:hover {
-      text-shadow: 0 0 .45px $link-color, 0 0 .45px $link-color;
-      border-bottom: 1px solid $link-color;
+      text-shadow: 0 0 .45px $link, 0 0 .45px $link;
+      border-bottom: 1px solid $link;
     }
   }
 
@@ -63,7 +63,7 @@
     display: flex;
   }
 
-  &__form-input {
+  &__input {
     width: 170px;
     height: 38px;
     padding: 14px 15px 16px;
@@ -78,7 +78,7 @@
     }
   }
 
-  &__form-btn {
+  &__btn {
     padding: 8px 16px;
     height: 38px;
     width: 100px;
@@ -91,18 +91,8 @@
     background-color: #a3bbc8;
     cursor: pointer;
     outline-color: transparent;
-
-    transition: all .3s;
-
-    &:hover,
-    &:focus {
-      background-color: rgb(178, 197, 207);
-      box-shadow: 0px 0px 17px 0px rgba(178, 197, 207, .8);
-    }
-
-    &:active {
-      background-color: #8d9ca3;
-    }
+    
+    @extend %btn-actions;
   }
 
   &__bottom {
@@ -122,19 +112,19 @@
     &+& {
       margin-left: 13px;
       padding-left: 13px;
-      border-left: 1px solid $link-color;
+      border-left: 1px solid $link;
     }
   }
 
   &__bottom-link {
-    color: $link-color;
+    color: $link;
     border-bottom: 1px solid transparent;
 
     transition: all .3s;
 
     &:hover {
-      text-shadow: 0 0 .45px $link-color, 0 0 .45px $link-color;
-      border-bottom: 1px solid $link-color;
+      text-shadow: 0 0 .45px $link, 0 0 .45px $link;
+      border-bottom: 1px solid $link;
     }
   }
 }

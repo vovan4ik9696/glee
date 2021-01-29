@@ -1,18 +1,18 @@
 .filter-nav {
   display: flex;
   justify-content: center;
-}
 
-.filter-nav__btn {
-  margin-bottom: 78px;
+  &__btn {
+    margin-bottom: 78px;
 
-  color: #8b8b8b;
+    color: #8b8b8b;
 
-  background-color: transparent;
-  border: none;
-  outline: transparent;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
 
-  cursor: pointer;
+    cursor: pointer;
+  }
 
   &+& {
     margin-left: 22px;

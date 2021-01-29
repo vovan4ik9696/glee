@@ -20,13 +20,13 @@
 
     @extend %rubik-500;
     font-size: 15px;
-    color: $accent-color;
+    color: $accent;
     border-bottom: 1px solid transparent;
 
     transition: border-color .3s;
 
     &:hover {
-      border-color: $accent-color;
+      border-color: $accent;
     }
   }
 }
@@ -118,7 +118,7 @@
     text-align: center;
     line-height: 16px;
     font-size: 10px;
-    color: $title-color;
+    color: $title;
 
     border-radius: 50%;
     background-color: #fff;

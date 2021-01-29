@@ -9,65 +9,47 @@
     position: relative;
 
     display: flex;
-    max-width: 590px;
+    max-width: 33.33%;
+    justify-content: center;
     width: 100%;
-    padding: 39px 0;
+    padding: 39px 0 39px 80px;
 
     &:not(:last-child) {
       border-right: 1px solid #e8e4df;
     }
 
-    &--support {
-      .benefit__content {
-        &::before {
-          width: 49px;
-          height: 49px;
-  
-          background-image: url('../images/icons/support.svg');
-        }
-      }
 
-    }
-
-    &--delivery {
-      .benefit__content {
-        max-width: 220px;
-        
-        &::before {
-          width: 49px;
-          height: 29px;
-  
-          background-image: url('../images/icons/delivery.svg');
-        }
-      }
-
-    }
-
-    &--payment {
-      .benefit__content {
-        max-width: 240px;
-        &::before {
-          width: 49px;
-          height: 44px;
-  
-          background-image: url('../images/icons/payment.svg');
-        }
-      }
-    }
   }
 
   &__content {
     position: relative;
 
-    max-width: 207px;
-    margin-left: 240px;
+    max-width: 220px;
 
     &::before {
-      content: '';
-
       position: absolute;
       left: -80px;
       top: 8px;
+    }
+
+    &--support {
+      &::before {
+        content: url('../images/icons/support.svg');
+      }
+
+    }
+
+    &--delivery {
+      &::before {
+        content: url('../images/icons/delivery.svg');
+      }
+
+    }
+
+    &--payment {
+      &::before {
+        content: url('../images/icons/payment.svg');
+      }
     }
   }
 
