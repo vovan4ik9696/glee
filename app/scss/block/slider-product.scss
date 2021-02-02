@@ -37,16 +37,6 @@
     display: inline-block;
     padding: 23px 100px 23px 23px;
 
-    @extend %rubik-500;
-    font-size: 15px;
-    line-height: 1;
-    color: #ffffff;
-
-    background-color: #a3bbc8;
-    outline: transparent;
-
-    @extend %btn-actions;
-
     &::after {
       content: '';
 
@@ -58,6 +48,15 @@
       height: 9px;
 
       background-image: url('../images/icons/arrow.svg');
+    }
+  }
+
+  &__img {
+    img {
+      max-width: 640px;
+      max-height: 264px;
+
+      object-fit: contain;
     }
   }
 

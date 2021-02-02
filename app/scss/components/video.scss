@@ -1,0 +1,18 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 501px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &__link {
+    border-radius: 50%;
+
+    &:hover {
+      animation: pulse 2s infinite;
+    }
+  }
+}

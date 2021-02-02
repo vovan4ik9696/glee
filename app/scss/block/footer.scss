@@ -19,6 +19,9 @@
   }
 
   &__top-item {
+    max-width: 220px;
+    margin-bottom: 10px;
+
     &--services {
       margin: 0 180px 0 100px;
     }
@@ -28,13 +31,10 @@
     margin-top: 30px;
   }
 
-  &__top-item {
-    max-width: 220px;
-    margin-bottom: 10px;
-  }
-
   &__top-link {
+    font-style: normal;
     @extend %footer-text;
+
     border-bottom: 1px solid transparent;
 
     transition: all .3s;
@@ -43,11 +43,6 @@
       text-shadow: 0 0 .45px $link, 0 0 .45px $link;
       border-bottom: 1px solid $link;
     }
-  }
-
-  &__top-name {
-    font-style: normal;
-    text-transform: uppercase;
   }
 
   &__top-form {
@@ -84,15 +79,8 @@
     width: 100px;
 
     @extend %sans-400;
+    font-weight: 400;
     font-size: 14px;
-    color: #ffffff;
-
-    border: none;
-    background-color: #a3bbc8;
-    cursor: pointer;
-    outline-color: transparent;
-    
-    @extend %btn-actions;
   }
 
   &__bottom {
@@ -104,6 +92,7 @@
 
   &__bottom-list {
     display: flex;
+    margin-left: 100px;
 
     line-height: 1.2;
   }

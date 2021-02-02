@@ -13,6 +13,19 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const addSrc = require('gulp-add-src');
+// const svgSprite = require('gulp-svg-sprite');
+
+// function svgsprite() {
+//   return src('app/images/**/*.svg')
+//   .pipe(svgSprite({
+//     mode: {
+//       stack: {
+//         sprite: '../sprite.svg'
+//       }
+//     }
+//   }))
+//   .pipe(dest('app/images'))
+// }
 
 function browsersync() {
   browserSync.init({

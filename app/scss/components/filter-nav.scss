@@ -12,9 +12,10 @@
     outline: transparent;
 
     cursor: pointer;
+
+    &+& {
+      margin-left: 22px;
+    }
   }
 
-  &+& {
-    margin-left: 22px;
-  }
 }

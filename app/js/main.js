@@ -8,7 +8,7 @@ $(function () {
     fade: true
   });
 
-  $('.insights__partners-slider').slick({
+  $('.partners__slider').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,

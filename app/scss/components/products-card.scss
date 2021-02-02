@@ -42,6 +42,7 @@
     border: none;
     outline: transparent;
     border-radius: 50%;
+    box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.1);
     cursor: pointer;
 
     transition: background-color .2s;
@@ -66,7 +67,11 @@
   }
 
   &__img {
+    max-width: 186px;
+    max-height: 195px;
     margin: 0 auto 27px;
+
+    object-fit: contain;
   }
 
   &__text {

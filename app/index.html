@@ -96,10 +96,12 @@
                   SMART AND
                   TRENDY
                 </p>
-                <p class="slider-product__descr">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider-product__link" href="#">Shop Now</a>
+                <div class="slider-product__descr">
+                  <p>
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                </div>
+                <a class="slider-product__link btn btn--green" href="#">Shop Now</a>
               </div>
               <div class="slider-product__img">
                 <img src="images/slider-img.png" alt="slider img">
@@ -114,7 +116,7 @@
                 <p class="slider-product__descr">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 </p>
-                <a class="slider-product__link" href="#">Shop Now</a>
+                <a class="slider-product__link btn btn--green" href="#">Shop Now</a>
               </div>
               <img class="slider-product__img" src="images/slider-img.png" alt="slider img">
             </div>
@@ -127,7 +129,7 @@
                 <p class="slider-product__descr">
                   Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 </p>
-                <a class="slider-product__link" href="#">Shop Now</a>
+                <a class="slider-product__link btn btn--green" href="#">Shop Now</a>
               </div>
               <img class="slider-product__img" src="images/slider-img.png" alt="slider img">
             </div>
@@ -456,28 +458,28 @@
       </div>
 
       <div class="container container--large">
-        <div class="products-week__special">
-          <div class="products-week__item">
-            <div class="products-week__container">
-              <img class="products-week__img" src="images/products/products-week-1.png" alt="special product">
-              <h3 class="products-week__title">Mirum Notare Tellus</h3>
-              <p class="products-week__text">
+        <div class="products-special">
+          <article class="products-special__item">
+            <div class="products-special__container">
+              <img class="products-special__img" src="images/products/products-week-1.png" alt="special product">
+              <h3 class="products-special__title">Mirum Notare Tellus</h3>
+              <p class="products-special__text">
                 LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
               </p>
-              <a class="products-week__link" href="#">View More</a>
+              <a class="products-special__link btn btn--transparent" href="#">View More</a>
             </div>
-          </div>
+          </article>
 
-          <div class="products-week__item">
-            <div class="products-week__container">
-              <img class="products-week__img" src="images/products/products-week-2.png" alt="special product">
-              <h3 class="products-week__title">Malesuada Tempor Euismod</h3>
-              <p class="products-week__text">
+          <article class="products-special__item">
+            <div class="products-special__container">
+              <img class="products-special__img" src="images/products/products-week-2.png" alt="special product">
+              <h3 class="products-special__title">Malesuada Tempor Euismod</h3>
+              <p class="products-special__text">
                 50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
               </p>
-              <a class="products-week__link" href="#">View More</a>
+              <a class="products-special__link btn btn--transparent" href="#">View More</a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -487,81 +489,83 @@
         <h2 class="title">New Design</h2>
         <div class="filter-nav">
           <button class="filter-nav__btn" type="button" data-filter="all">All</button>
-          <button class="filter-nav__btn" type="button" data-filter=".new-design__furnitures">Furnitures</button>
-          <button class="filter-nav__btn" type="button" data-filter=".new-design__chairs">Chairs</button>
-          <button class="filter-nav__btn" type="button" data-filter=".new-design__lighting">Lighting</button>
-          <button class="filter-nav__btn" type="button" data-filter=".new-design__decor">Decor</button>
+          <button class="filter-nav__btn" type="button" data-filter=".furnitures">Furnitures</button>
+          <button class="filter-nav__btn" type="button" data-filter=".chairs">Chairs</button>
+          <button class="filter-nav__btn" type="button" data-filter=".lighting">Lighting</button>
+          <button class="filter-nav__btn" type="button" data-filter=".decor">Decor</button>
         </div>
 
         <div class="new-design__content">
-          <article class="new-design__item mix new-design__furnitures">
+          <article class="design-card mix furnitures">
             <a href="#">
-              <h3 class="new-design__title">Beat Flat Pendant Black</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-1.png" alt="new design images">
+              <h3 class="design-card__title">Beat Flat Pendant Black</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-1.png" alt="new design images">
               </div>
             </a>
           </article>
 
-          <article class="new-design__item mix new-design__lighting">
+          <article class="design-card mix chairs">
             <a href="#">
-              <h3 class="new-design__title">Lampe Sur Pieds Bamboo</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-2.png" alt="new design images">
+              <h3 class="design-card__title">Lampe Sur Pieds
+                Bamboo</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-2.png" alt="new design images">
               </div>
             </a>
           </article>
 
-          <article class="new-design__item mix new-design__furnitures decor">
+          <article class="design-card mix lighting decor">
             <a href="#">
-              <h3 class="new-design__title">Rattan Rocking Chair</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-3.png" alt="new design images">
+              <h3 class="design-card__title">Rattan Rocking
+                Chair</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-3.png" alt="new design images">
               </div>
             </a>
           </article>
 
-          <article class="new-design__item mix new-design__decor">
+          <article class="design-card mix furnitures lighting">
             <a href="#">
-              <h3 class="new-design__title">Rattan Rocking Chair</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-4.png" alt="new design images">
+              <h3 class="design-card__title">Rattan Rocking
+                Chair</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-4.png" alt="new design images">
               </div>
             </a>
           </article>
 
-          <article class="new-design__item mix new-design__chairs lighting">
+          <article class="design-card mix decor chairs">
             <a href="#">
-              <h3 class="new-design__title">Rattan Rocking Chair</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-5.png" alt="new design images">
+              <h3 class="design-card__title">Rattan Rocking
+                Chair</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-5.png" alt="new design images">
               </div>
             </a>
           </article>
 
-          <article class="new-design__item mix new-design__decor">
+          <article class="design-card mix lighting">
             <a href="#">
-              <h3 class="new-design__title">Lampe Sur Pieds Bamboo</h3>
-              <div class="new-design__container">
-                <span class="new-design__subtitle">Classic</span>
-                <img class="new-design__img" src="images/design/design-6.png" alt="new design images">
+              <h3 class="design-card__title">Lampe Sur Pieds
+                Bamboo</h3>
+              <div class="design-card__container">
+                <span class="design-card__subtitle">Classic</span>
+                <img class="design-card__img" src="images/design/design-6.png" alt="new design images">
               </div>
             </a>
           </article>
         </div>
       </div>
 
-      <div class="new-design__video" style="background-image: url('images/video-bg.jpg');">
-        <a data-fancybox href="https://www.youtube.com/watch?v=ItmsgyjyCro&feature=emb_logo">
-          <svg id="SVGDoc" width="127" height="127" xmlns="http://www.w3.org/2000/svg" version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 127 127">
-            <defs></defs>
-            <desc>Generated with Avocode.</desc>
+      <div class="video" style="background-image: url('images/video-bg.jpg');">
+        <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=ItmsgyjyCro&feature=emb_logo">
+          <svg id="SVGDoc" width="127" height="127" viewBox="0 0 127 127">
             <g>
               <g opacity="0.4">
                 <title>Ellipse 11</title>
@@ -594,94 +598,111 @@
       <div class="insights__inner">
         <div class="insights__content">
           <div class="insights__top">
-            <div class="insights__title">Our Insights & Articles</div>
+            <h2 class="insights__title">Our Insights & Articles</h2>
             <a class="insights__view" href="#">View All</a>
           </div>
           <div class="insights__items">
-            <div class="insights__item">
-              <img class="insights__img" src="images/insights/insights-1.jpg" alt="insights images">
-              <div class="insights__box">
-                <a class="insights__category" href="#">news</a>
-                <p class="insights__text">
+
+            <article class="article-card">
+              <a class="article-card__link" href="#">
+                <img class="article-card__img" src="images/insights/insights-1.jpg" alt="insights images">
+              </a>
+              <div class="article-card__box">
+                <a class="article-card__category" href="#">news</a>
+                <p class="article-card__text">
                   Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                 </p>
-                <div class="insights__info">
-                  <span class="insights__publish">28 JANUARY, 2020</span>
-                  <span class="insights__author">BY ADMIN</span>
+                <div class="article-card__info">
+                  <span class="article-card__publish">
+                    <time>28 JANUARY, 2020</time>
+                  </span>
+                  <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="insights__item">
-              <img class="insights__img" src="images/insights/insights-2.jpg" alt="insights images">
-              <div class="insights__box">
-                <a class="insights__category" href="#">news</a>
-                <p class="insights__text">
-                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            <article class="article-card">
+              <a class="article-card__link" href="#">
+                <img class="article-card__img" src="images/insights/insights-2.jpg" alt="insights images">
+              </a>
+              <div class="article-card__box">
+                <a class="article-card__category" href="#">news</a>
+                <p class="article-card__text">
+                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 </p>
-                <div class="insights__info">
-                  <span class="insights__publish">28 JANUARY, 2020</span>
-                  <span class="insights__author">BY ADMIN</span>
+                <div class="article-card__info">
+                  <span class="article-card__publish">
+                    <time>28 JANUARY, 2020</time>
+                  </span>
+                  <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="insights__item">
-              <img class="insights__img" src="images/insights/insights-3.jpg" alt="insights images">
-              <div class="insights__box">
-                <a class="insights__category" href="#">news</a>
-                <p class="insights__text">
-                  Rncididunt ut labore et dolore magna aliqua. Ut enim 
+            <article class="article-card">
+              <a class="article-card__link" href="#">
+                <img class="article-card__img" src="images/insights/insights-3.jpg" alt="insights images">
+              </a>
+              <div class="article-card__box">
+                <a class="article-card__category" href="#">news</a>
+                <p class="article-card__text">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim
                 </p>
-                <div class="insights__info">
-                  <span class="insights__publish">28 JANUARY, 2020</span>
-                  <span class="insights__author">BY ADMIN</span>
+                <div class="article-card__info">
+                  <span class="article-card__publish">
+                    <time>28 JANUARY, 2020</time>
+                  </span>
+                  <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </div>
+            </article>
+
           </div>
         </div>
-        <div class="insights__partners">
-          <div class="insights__partners-slider">
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-1.png" alt="slider images">
+
+        <div class="partners">
+          <div class="partners__slider">
+
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-1.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-2.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-2.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-3.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-3.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-4.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-4.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-5.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-5.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-1.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-1.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-2.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-2.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-3.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-3.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-4.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-4.png" alt="slider images">
             </div>
 
-            <div class="insights__partners-item">
-              <img class="insights__partners-img" src="images/partners/partner-5.png" alt="slider images">
+            <div class="partners__item">
+              <img class="partners__img" src="images/partners/partner-5.png" alt="slider images">
             </div>
+
           </div>
         </div>
       </div>
@@ -698,20 +719,20 @@
           <address class="footer__top-address">
             <div class="footer__top-item">
               <a class="footer__top-link" href="#">
-                <span class="footer__top-name">ADDRESS: </span>
+                ADDRESS:
                 4772 Wines Lane
                 Houston, TX 77032
               </a>
             </div>
             <div class="footer__top-item">
               <a class="footer__top-link" href="tel:+8323475843">
-                <span class="footer__top-name">Telephone: </span>
+                Telephone:
                 +832-347-5843
               </a>
             </div>
             <div class="footer__top-item">
               <a class="footer__top-link" href="mailto:contact@Glee.com">
-                <span class="footer__top-name">Email: </span>
+                Email:
                 contact@Glee.com
               </a>
             </div>
@@ -769,8 +790,8 @@
           <form class="footer__form" action="#">
             <div class="footer__form-container">
               <label class="visibility-hidden" for="mail">Mail</label>
-              <input class="footer__input" id="mail" name="mail" type="email" placeholder="Email address">
-              <button class="footer__btn" type="submit">Subscribe</button>
+              <input class="footer__input" id="mail" name="mail" type="email" placeholder="Email address" required>
+              <button class="footer__btn btn btn--green" type="submit">Subscribe</button>
             </div>
           </form>
         </div>

@@ -44,6 +44,10 @@ body {
   }
 }
 
+.logo__img {
+  max-height: 39px;
+}
+
 .title {
   margin-bottom: 14px;
 
@@ -54,3 +58,26 @@ body {
   color: $title;
 }
 
+.btn {
+  font-size: 15px;
+  line-height: 1;
+  @extend %rubik-500;
+
+  outline: transparent;
+  @extend %btn-actions;
+  cursor: pointer;
+
+  &--transparent {
+    color: $accent;
+
+    border-radius: 5px;
+    border: 1px solid #d5d0c9;
+  }
+
+  &--green {
+    color: #ffffff;
+
+    background-color: #a3bbc8;
+    border: none;
+  }
+}

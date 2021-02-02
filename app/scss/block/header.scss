@@ -68,12 +68,14 @@
 
       transition: transform .3s;
 
-      &:hover svg {
-        transform: scale(2, 2);
-      }
+      &:hover {
+        svg {
+          transform: scale(2, 2);
+        }
 
-      &:hover .user-nav__number {
-        transform: scale(1.4, 1.4) translate(5px, -5px);
+        .user-nav__number {
+          transform: scale(1.4, 1.4) translate(5px, -5px);
+        }
       }
     }
 
@@ -82,12 +84,14 @@
 
       transition: all .3s;
 
-      &:hover svg {
-        transform: scale(2, 2);
-      }
+      &:hover {
+        svg {
+          transform: scale(2, 2);
+        }
 
-      &:hover .user-nav__number {
-        transform: scale(1.4, 1.4) translate(5px, -5px);
+        .user-nav__number {
+          transform: scale(1.4, 1.4) translate(5px, -5px);
+        }
       }
     }
 
@@ -105,6 +109,8 @@
 
   &__img {
     display: block;
+
+    transition: transform .3s;
   }
 
   &__number {
@@ -125,10 +131,6 @@
 
     z-index: 2;
 
-    transition: transform .3s;
-  }
-
-  &__img {
     transition: transform .3s;
   }
 }
