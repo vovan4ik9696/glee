@@ -3,10 +3,16 @@
 
   &__top {
     display: flex;
+    justify-content: space-between;
     padding: 70px 0;
 
     line-height: 1.71;
     border-bottom: 1px solid #dae4e9;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+    }
+    
   }
 
   &__title {
@@ -22,9 +28,10 @@
     max-width: 220px;
     margin-bottom: 10px;
 
-    &--services {
-      margin: 0 180px 0 100px;
+    @media (max-width: $md) {
+      
     }
+    
   }
 
   &__top-address {
@@ -35,19 +42,11 @@
     font-style: normal;
     @extend %footer-text;
 
-    border-bottom: 1px solid transparent;
-
-    transition: all .3s;
-
-    &:hover {
-      text-shadow: 0 0 .45px $link, 0 0 .45px $link;
-      border-bottom: 1px solid $link;
-    }
+    @extend %link-actions;
   }
 
   &__top-form {
     max-width: 275px;
-    margin-left: auto;
   }
 
   &__form-text {
@@ -88,6 +87,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+    }
+    
   }
 
   &__bottom-list {
@@ -95,6 +99,12 @@
     margin-left: 100px;
 
     line-height: 1.2;
+
+    @media (max-width: $xs) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    
   }
 
   &__bottom-item {
@@ -107,13 +117,7 @@
 
   &__bottom-link {
     color: $link;
-    border-bottom: 1px solid transparent;
 
-    transition: all .3s;
-
-    &:hover {
-      text-shadow: 0 0 .45px $link, 0 0 .45px $link;
-      border-bottom: 1px solid $link;
-    }
+    @extend %link-actions;
   }
 }

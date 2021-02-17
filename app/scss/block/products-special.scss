@@ -24,12 +24,28 @@
     flex-direction: column;
     justify-content: space-between;
     max-width: 329px;
+
+    @media (max-width: 1640px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
   }
 
   &__img {
     position: absolute;
     left: -280px;
     bottom: 0;
+
+    max-width: 233px;
+
+    @media (max-width: 1640px) {
+      position: relative;
+      left: 0;
+
+      width: 50%;
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
@@ -75,5 +91,14 @@
 
       background-image: url('../images/icons/arrow-accent.svg');
     }
+
+    @media (max-width: 1640px) {
+      display: block;
+    }
   }
+
+  @media (max-width: 1640px) {
+    
+  }
+  
 }

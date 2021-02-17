@@ -6,6 +6,25 @@
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 40px;
     grid-column-gap: 30px;
+
+    @media (max-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    @media (max-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $sm) {}
+
+    @media (max-width: $xs) {
+      display: flex;
+      margin-top: 50px;
+
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .mixitup-control-active {

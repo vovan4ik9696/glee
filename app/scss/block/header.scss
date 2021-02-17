@@ -1,17 +1,106 @@
 .menu {
+  position: relative;
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
 
+  &__btn {
+    position: relative;
+
+    display: none;
+    margin-left: 150px;
+    padding-right: 30px;
+
+    color: $accent;
+
+    background-color: transparent;
+    border: none;
+    @extend %link-actions;
+
+
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 6px;
+
+      width: 15px;
+      height: 15px;
+
+      background-image: url('../../images/icons/up-angle.svg');
+      background-size: cover;
+
+      transform: rotate(180deg);
+    }
+
+    &--active {
+      &.menu__btn::after {
+      transform: rotate(0);
+      }
+    }
+
+    @media (max-width: $lg) {
+      display: block;
+    }
+
+    @media (max-width: $md) {
+      margin-left: auto;
+    }
+    
+
+  }
+
   &__list {
     display: flex;
     margin-left: 147px;
+
+    z-index: 10;
+
+    @media (max-width: $lg) {
+      position: absolute;
+      top: 130px;
+
+      width: 100%;
+
+      display: block;
+      margin-left: 0;
+
+      text-align: center;
+
+      background-color: #fff;
+
+      transform: translateY(-200%);
+
+      transition: transform .3s;
+    }
+
+    @media (max-width: $md) {
+      top: 180px;
+    }
+
+    @media (max-width: $sm) {}
+
+    @media (max-width: $xs) {}
+
+    &--active {
+      transform: translateY(0);
+    }
+
   }
 
   &__item {
-    &+& {
-      margin-left: 33px;
+    &:not(:last-child) {
+      margin-right: 33px;
+
+      @media (max-width: $lg) {
+        margin: 0 0 15px;
+      }
+
     }
   }
 
@@ -21,19 +110,24 @@
     @extend %rubik-500;
     font-size: 15px;
     color: $accent;
-    border-bottom: 1px solid transparent;
-
-    transition: border-color .3s;
-
-    &:hover {
-      border-color: $accent;
-    }
+    @extend %link-actions;
   }
 }
 
 .user-nav {
   display: flex;
   align-items: center;
+
+  svg {
+    width: 19px;
+    height: 17px;
+
+    @media (max-width: $xs) {
+      width: 15px;
+      height: 13px;
+    }
+    
+  }
 
   &__orders {
     display: flex;
@@ -56,7 +150,7 @@
       transition: transform .3s;
 
       &:hover svg {
-        transform: scale(2, 2);
+        transform: scale(2);
       }
     }
 
@@ -70,11 +164,11 @@
 
       &:hover {
         svg {
-          transform: scale(2, 2);
+          transform: scale(2);
         }
 
         .user-nav__number {
-          transform: scale(1.4, 1.4) translate(5px, -5px);
+          transform: scale(1.4) translate(5px, -5px);
         }
       }
     }
@@ -86,11 +180,11 @@
 
       &:hover {
         svg {
-          transform: scale(2, 2);
+          transform: scale(2);
         }
 
         .user-nav__number {
-          transform: scale(1.4, 1.4) translate(5px, -5px);
+          transform: scale(1.4) translate(5px, -5px);
         }
       }
     }
@@ -102,7 +196,7 @@
       background-color: #a3bbc8;
 
       &:hover svg {
-        transform: scale(1.7, 1.7);
+        transform: scale(1.7);
       }
     }
   }
@@ -133,4 +227,16 @@
 
     transition: transform .3s;
   }
+
+  @media (max-width: $md) {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $xs) {
+    justify-content: center;
+  }
+  
+
 }

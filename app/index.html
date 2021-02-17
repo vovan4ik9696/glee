@@ -17,6 +17,7 @@
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
+        <button class="menu__btn">Menu</button>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">Home +</a>
@@ -39,11 +40,8 @@
         </ul>
         <div class="user-nav">
           <a class="user-nav__link user-nav__link--search" href="#">
-            <svg class="user-nav__img" xmlns="http://www.w3.org/2000/svg" fill="#243f4d" fill-rule="evenodd"
-              width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
-              <path id="icon" class="cls-1"
-                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
-                transform="translate(-1544.72 -66)" />
+            <svg class="user-nav__img">
+              <use xlink:href="images/sprite.svg#search"></use>
             </svg>
           </a>
           <div class="user-nav__orders">
@@ -51,32 +49,25 @@
               <span class="user-nav__number">
                 0
               </span>
-              <svg class="user-nav__img" xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
-                viewBox="0 0 24 24" fill="none" stroke="#243f4d" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                </path>
+
+              <svg class="user-nav__img">
+                <use xlink:href="images/sprite.svg#heart"></use>
               </svg>
+
             </a>
             <a class="user-nav__link user-nav__link--cart" href="#">
               <span class="user-nav__number">
                 0
               </span>
-              <svg class="user-nav__img" xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969" fill="#243f4d"
-                fill-rule="evenodd" viewBox="0 0 18.94 16.969">
-                <path class="cls-1"
-                  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
-                  transform="translate(-1716 -69)" />
+
+              <svg class="user-nav__img">
+                <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
             </a>
           </div>
           <a class="user-nav__link user-nav__link--menu-btn" href="#">
-            <svg class="user-nav__img" xmlns="http://www.w3.org/2000/svg" fill="#fff" fill-rule="evenodd" width="20.03"
-              height="20.031" viewBox="0 0 20.03 20.031">
-              <path class="cls-1"
-                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
-                transform="translate(-1811 -63.594)" />
+            <svg class="user-nav__img">
+              <use xlink:href="images/sprite.svg#menu"></use>
             </svg>
           </a>
         </div>
@@ -84,11 +75,12 @@
     </div>
   </header>
 
+  
   <main class="main">
 
     <div class="container container--large">
       <div class="slider-product">
-        <div class="container">
+        <div class="container container--slider">
           <div class="slider-product__inner">
             <div class="slider-product__item">
               <div class="slider-product__content">
@@ -118,7 +110,9 @@
                 </p>
                 <a class="slider-product__link btn btn--green" href="#">Shop Now</a>
               </div>
-              <img class="slider-product__img" src="images/slider-img.png" alt="slider img">
+              <div class="slider-product__img">
+                <img src="images/slider-img.png" alt="slider img">
+              </div>
             </div>
             <div class="slider-product__item">
               <div class="slider-product__content">
@@ -131,7 +125,9 @@
                 </p>
                 <a class="slider-product__link btn btn--green" href="#">Shop Now</a>
               </div>
-              <img class="slider-product__img" src="images/slider-img.png" alt="slider img">
+              <div class="slider-product__img">
+                <img src="images/slider-img.png" alt="slider img">
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +157,7 @@
             </div>
           </li>
           <li class="benefit__item">
-            <div class="benefit__content benefit__conten--payment">
+            <div class="benefit__content benefit__content--payment">
               <p class="benefit__title">
                 100% Payment secure.
               </p>
@@ -565,7 +561,7 @@
 
       <div class="video" style="background-image: url('images/video-bg.jpg');">
         <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=ItmsgyjyCro&feature=emb_logo">
-          <svg id="SVGDoc" width="127" height="127" viewBox="0 0 127 127">
+          <svg class="video__svg-big" id="SVGDoc" width="127" height="127" viewBox="0 0 127 127">
             <g>
               <g opacity="0.4">
                 <title>Ellipse 11</title>
@@ -573,18 +569,21 @@
                   d="M63.49999,-0.00016c35.07008,0 63.49995,28.43005 63.49995,63.49995c0,35.07022 -28.42987,63.49995 -63.49995,63.49995c-35.07008,0 -63.50006,-28.42973 -63.50006,-63.49995c0,-35.0699 28.42999,-63.49995 63.50006,-63.49995z"
                   fill="#a3bbc8" fill-opacity="1"></path>
               </g>
-              <g>
-                <title>Ellipse 11</title>
-                <path
-                  d="M63,13.99982c27.06184,0 48.99994,21.93793 48.99994,48.99994c0,27.06202 -21.9381,48.99994 -48.99994,48.99994c-27.06196,0 -49.00005,-21.93793 -49.00005,-48.99994c0,-27.06202 21.9381,-48.99994 49.00005,-48.99994z"
-                  fill="#a3bbc8" fill-opacity="1"></path>
-              </g>
-              <g>
-                <title>Form 24</title>
-                <path
-                  d="M73.68398,64.73972l-16.04404,9.79652c-0.50056,0.30622 -1.08067,0.46048 -1.66271,0.46048c-0.47951,0 -0.96039,-0.10523 -1.39915,-0.31635c-0.9716,-0.47028 -1.5786,-1.38732 -1.5786,-2.3854v-19.59501c0,-0.99874 0.60699,-1.91708 1.5786,-2.38638c0.97126,-0.46832 2.14874,-0.41374 3.06187,0.14347l16.04404,9.79783c0.82237,0.50231 1.3155,1.34287 1.3155,2.24161c0,0.89939 -0.49313,1.7406 -1.3155,2.24324z"
-                  fill="#ffffff" fill-opacity="1"></path>
-              </g>
+
+            </g>
+          </svg>
+          <svg class="video__svg-small">
+            <g>
+              <title>Ellipse 11</title>
+              <path class="video__path"
+                d="M63,13.99982c27.06184,0 48.99994,21.93793 48.99994,48.99994c0,27.06202 -21.9381,48.99994 -48.99994,48.99994c-27.06196,0 -49.00005,-21.93793 -49.00005,-48.99994c0,-27.06202 21.9381,-48.99994 49.00005,-48.99994z"
+                fill="#a3bbc8" fill-opacity="1"></path>
+            </g>
+            <g>
+              <title>Form 24</title>
+              <path
+                d="M73.68398,64.73972l-16.04404,9.79652c-0.50056,0.30622 -1.08067,0.46048 -1.66271,0.46048c-0.47951,0 -0.96039,-0.10523 -1.39915,-0.31635c-0.9716,-0.47028 -1.5786,-1.38732 -1.5786,-2.3854v-19.59501c0,-0.99874 0.60699,-1.91708 1.5786,-2.38638c0.97126,-0.46832 2.14874,-0.41374 3.06187,0.14347l16.04404,9.79783c0.82237,0.50231 1.3155,1.34287 1.3155,2.24161c0,0.89939 -0.49313,1.7406 -1.3155,2.24324z"
+                fill="#ffffff" fill-opacity="1"></path>
             </g>
           </svg>
         </a>
@@ -603,7 +602,7 @@
           </div>
           <div class="insights__items">
 
-            <article class="article-card">
+            <div class="article-card">
               <a class="article-card__link" href="#">
                 <img class="article-card__img" src="images/insights/insights-1.jpg" alt="insights images">
               </a>
@@ -613,15 +612,15 @@
                   Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                 </p>
                 <div class="article-card__info">
-                  <span class="article-card__publish">
-                    <time>28 JANUARY, 2020</time>
-                  </span>
+                  <time datetime="2020-01-28" class="article-card__publish">
+                    28 JANUARY, 2020
+                  </time>
                   <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <article class="article-card">
+            <div class="article-card">
               <a class="article-card__link" href="#">
                 <img class="article-card__img" src="images/insights/insights-2.jpg" alt="insights images">
               </a>
@@ -631,15 +630,15 @@
                   Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 </p>
                 <div class="article-card__info">
-                  <span class="article-card__publish">
-                    <time>28 JANUARY, 2020</time>
-                  </span>
+                  <time datetime="2020-01-28" class="article-card__publish">
+                    28 JANUARY, 2020
+                  </time>
                   <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <article class="article-card">
+            <div class="article-card">
               <a class="article-card__link" href="#">
                 <img class="article-card__img" src="images/insights/insights-3.jpg" alt="insights images">
               </a>
@@ -649,13 +648,13 @@
                   Rncididunt ut labore et dolore magna aliqua. Ut enim
                 </p>
                 <div class="article-card__info">
-                  <span class="article-card__publish">
-                    <time>28 JANUARY, 2020</time>
-                  </span>
+                  <time datetime="2020-01-28" class="article-card__publish">
+                    28 JANUARY, 2020
+                  </time>
                   <span class="article-card__author">BY ADMIN</span>
                 </div>
               </div>
-            </article>
+            </div>
 
           </div>
         </div>
@@ -817,7 +816,7 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="js/main.min.js"></script>
 </body>

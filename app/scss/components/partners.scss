@@ -9,4 +9,9 @@
   .slick-slide {
     margin-left: 90px;
   }
+
+  @media (max-width: $md) {
+    display: none;
+  }
+  
 }

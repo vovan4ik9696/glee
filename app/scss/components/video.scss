@@ -9,10 +9,42 @@
   background-size: cover;
 
   &__link {
-    border-radius: 50%;
+    position: relative;
+
+    transition: transform .3s;
 
     &:hover {
-      animation: pulse 2s infinite;
+      transform: scale(1.1);
     }
+
+    &:active {
+
+      .video__path {
+        fill: #969da1;
+      }
+    }    
   }
+
+  &__svg-big {
+    border-radius: 50%;
+
+    animation: pulse 4s infinite;
+  }
+
+  &__svg-small {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+  
+  
+  @media (max-width: $md) {
+    min-height: 413px;
+  }
+  
+  @media (max-width: $xs) {
+    min-height: 223px;
+  }
+
 }

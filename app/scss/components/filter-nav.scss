@@ -8,14 +8,27 @@
     color: #8b8b8b;
 
     background-color: transparent;
-    border: none;
-    outline: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 
     cursor: pointer;
+
+    @extend %link-actions;
 
     &+& {
       margin-left: 22px;
     }
+
+    @media (max-width: $xs) {
+      margin-bottom: 0;
+    }
+    
   }
+
+  @media (max-width: $xs) {
+    flex-wrap: wrap;
+  }
+  
 
 }

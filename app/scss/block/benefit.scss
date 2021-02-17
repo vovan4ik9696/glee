@@ -3,6 +3,11 @@
 
   &__list {
     display: flex;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
+    
   }
 
   &__item {
@@ -16,8 +21,25 @@
 
     &:not(:last-child) {
       border-right: 1px solid #e8e4df;
+
+      @media (max-width: $sm) {
+        border: none;
+        border-bottom: 1px solid #e8e4df;
+      }
+      
     }
 
+    @media (max-width: $lg) {
+      padding-left: 0;
+    }
+
+    @media (max-width: $sm) {
+      max-width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    
 
   }
 
@@ -30,6 +52,11 @@
       position: absolute;
       left: -80px;
       top: 8px;
+
+      @media (max-width: $lg) {
+        display: none;
+      }
+      
     }
 
     &--support {
