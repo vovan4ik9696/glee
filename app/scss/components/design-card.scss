@@ -1,0 +1,36 @@
+.design-card {
+  padding: 40px 0 35px 35px;
+  max-width: 370px;
+  width: 100%;
+  min-height: 246px;
+  overflow: hidden;
+
+  background-color: #f8f8f8;
+
+  &__title {
+    margin-bottom: 20px;
+    width: 172px;
+
+    color: $title;
+    font-size: 20px;
+    line-height: 1.23;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__subtitle {
+    margin-right: 9px;
+
+    color: #a3bbc8;
+  }
+
+  &__img {
+    max-height: 135px;
+
+    margin-right: 55px;
+  }
+}
